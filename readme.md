@@ -2,7 +2,7 @@
 
 ### Chrome Extension:
 ![](screenshot.png)
-- <a href="github.com/fjwntut/auto-admit-extension/raw/main/AutoAdmit.zip" Download>Download Auto Admit</a>
+- <a href="https://github.com/fjwntut/auto-admit-extension/raw/main/AutoAdmit.zip" Download>Download Auto Admit</a>
 - Installation： 
     1. Extract the zip
     2. Go to [chrome://extensions/](chrome://extensions/)
