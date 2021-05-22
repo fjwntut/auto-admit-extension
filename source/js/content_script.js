@@ -46,11 +46,11 @@ function AddButton(){
 
     // Append to html
     for(let element of document.getElementsByTagName('div')){
-        if (element.getAttribute("aria-label") == "Raise hand"){
+        if (element.getAttribute("aria-label") == "Meeting details"){
             if(!button_added){
                 document.head.appendChild(newCSS);
-                let parent = element.parentElement.parentElement;
-                button_added = parent.parentElement.insertBefore(newBtn, parent);
+                let sibling = element.parentElement;
+                button_added = sibling.parentElement.appendChild(newBtn);
                 btn_icon = button_added.appendChild(newImg);
                 btn_text = button_added.appendChild(newDiv);
                 button_added.addEventListener("click",()=>{button_onclick()});
