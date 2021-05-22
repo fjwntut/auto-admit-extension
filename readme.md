@@ -2,8 +2,12 @@
 
 ### Chrome Extension:
 ![](screenshot.png)
-- <a href="https://github.com/fjwntut/auto-admit-extension/raw/3de76482ef4f40ac7c8c38c10f2995debafb374a/AutoAdmit.crx" Download>Download Auto Admit</a>
-- Installation： Open [chrome://extensions/](chrome://extensions/) and drag the downloaded file to the window.
+- <a href="github.com/fjwntut/auto-admit-extension/raw/main/AutoAdmit.zip" Download>Download Auto Admit</a>
+- Installation： 
+    1. Extract the zip
+    2. Go to [chrome://extensions/](chrome://extensions/)
+    3. open developer mode
+    4. load unpack.
 - When a meeting is started, the extension generates a button in the bottom bar. You could use the button to toggle auto admit on/off.
 - This extension only work when the google meet tab is opened.
 
