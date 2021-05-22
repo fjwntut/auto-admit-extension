@@ -1,0 +1,24 @@
+#auto-admit-button{
+    width: 120px;
+    height: 100%;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8px;
+    border: 0;
+    background-color: transparent;
+}
+
+#auto-admit-button img{
+    width: 24px;
+    height: 24px;
+}
+
+#auto-admit-button div{
+    color: #3c4043;
+    font-family: "Google Sans";
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 13px;
+    margin: 5px;
+}
