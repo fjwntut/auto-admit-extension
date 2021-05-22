@@ -48,11 +48,11 @@ function AddButton(){
     for(let element of document.getElementsByTagName('div')){
         if (element.getAttribute("aria-label") == "Raise hand"){
             if(!button_added){
+                document.head.appendChild(newCSS);
                 let parent = element.parentElement.parentElement;
                 button_added = parent.parentElement.insertBefore(newBtn, parent);
                 btn_icon = button_added.appendChild(newImg);
                 btn_text = button_added.appendChild(newDiv);
-                document.head.appendChild(newCSS);
                 button_added.addEventListener("click",()=>{button_onclick()});
                 UpdateButton();
             }
