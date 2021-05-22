@@ -25,7 +25,7 @@ function Update() {
 
 function AutoClick() {
     for (let element of document.getElementsByTagName('span')) {
-        if (element.innerHTML === 'Admit') {
+        if (element.innerHTML === 'Admit'||element.innerHTML === '接受') {
             console.log('There is someone waiting to join this meeting, automatically admitting them...');
             element.click();
         }
@@ -46,7 +46,7 @@ function AddButton(){
 
     // Append to html
     for(let element of document.getElementsByTagName('div')){
-        if (element.getAttribute("aria-label") == "Meeting details"){
+        if (element.getAttribute("aria-label") == "Meeting details"||element.getAttribute("aria-label") == "會議詳細資料"){
             if(!button_added){
                 document.head.appendChild(newCSS);
                 let sibling = element.parentElement;
