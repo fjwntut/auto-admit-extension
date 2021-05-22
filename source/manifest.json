@@ -28,5 +28,6 @@
         "matches": ["https://meet.google.com/*"],
         "js": ["js/content_script.js"]
       }
-    ]
+    ],
+   "web_accessible_resources": [ "res/button-off.png", "res/button-on.png", "res/btn.css" ]
 }
