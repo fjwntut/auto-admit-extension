@@ -10,4 +10,4 @@
   - To toggle Auto Admit on / off simply click the bookmark 
  
 ### Github Repo
-https://github.com/fjwntut/auto-admit-extension
+[fjwntut/auto-admit-extension: Auto admit extension for google meet](https://github.com/fjwntut/auto-admit-extension)
