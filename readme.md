@@ -2,6 +2,7 @@
 
 ### Chrome Extension:
 ![](screenshot.png)
+- ONLY support chinese traditional and english! Please add issues to let me know if you need any other language supported.
 - <a href="https://github.com/fjwntut/auto-admit-extension/raw/main/AutoAdmit.zip" Download>Download Auto Admit</a>
 - Installation： 
     1. Extract the zip
