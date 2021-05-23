@@ -1,0 +1,26 @@
+{
+    "appName": {
+      "message": "Auto Admit",
+      "description": "The title of the application, displayed in the web store."
+    },
+    "appDesc": {
+      "message": "Google Meet 自動加入插件",
+      "description":"The description of the application, displayed in the web store."
+    },
+    "toggleOn": {
+      "message": "自動加入開啓",
+      "description":"The button description text under icon when toggle is on."
+    },
+    "toggleOff": {
+      "message": "自動加入關閉",
+      "description":"The button description text under icon when toggle is off."
+    },
+    "admitBtn": {
+      "message": "接受",
+      "description":"The button to press."
+    },
+    "addBeside": {
+      "message": "會議詳細資料",
+      "description":"The button to add beside"
+    }
+  }

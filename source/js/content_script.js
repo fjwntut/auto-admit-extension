@@ -25,7 +25,7 @@ function Update() {
 
 function AutoClick() {
     for (let element of document.getElementsByTagName('span')) {
-        if (element.innerHTML === 'Admit'||element.innerHTML === '接受') {
+        if (element.innerHTML === chrome.i18n.getMessage("admitBtn")) {
             console.log('There is someone waiting to join this meeting, automatically admitting them...');
             element.click();
         }
@@ -46,7 +46,7 @@ function AddButton(){
 
     // Append to html
     for(let element of document.getElementsByTagName('div')){
-        if (element.getAttribute("aria-label") == "Meeting details"||element.getAttribute("aria-label") == "會議詳細資料"){
+        if (element.getAttribute("aria-label") == chrome.i18n.getMessage("addBeside")){
             if(!button_added){
                 document.head.appendChild(newCSS);
                 let sibling = element.parentElement;
@@ -68,7 +68,7 @@ function button_onclick(){
 
 function UpdateButton(){
     btn_icon.src = chrome.runtime.getURL("./res/button-"+toggle+".png");
-    btn_text.innerHTML = "Auto Admit "+toggle;
+    btn_text.innerHTML = chrome.i18n.getMessage("toggle"+toggle);
     chrome.runtime.sendMessage({
         action: 'setToggle',
         value: toggle

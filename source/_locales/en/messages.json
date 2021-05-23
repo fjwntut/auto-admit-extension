@@ -1,0 +1,26 @@
+{
+    "appName": {
+      "message": "Auto Admit",
+      "description": "The title of the application, displayed in the web store."
+    },
+    "appDesc": {
+      "message": "Auto Admit Chrome Extension for Google Meet",
+      "description":"The description of the application, displayed in the web store."
+    },
+    "toggleOn": {
+        "message": "Auto admit on",
+        "description":"The button description text under icon when toggle is on."
+    },
+    "toggleOff": {
+        "message": "Auto admit off",
+        "description":"The button description text under icon when toggle is off."
+    },
+    "admitBtn": {
+        "message": "Admit",
+        "description":"The button to press."
+    },
+    "addBeside": {
+        "message": "Meeting details",
+        "description":"The button to add beside"
+    }
+  }
