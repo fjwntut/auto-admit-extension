@@ -3,7 +3,7 @@
 ### Chrome Extension:
 ![](screenshot.png)
 - ONLY support chinese traditional and english! Please add issues to let me know if you need any other language supported.
-- Make sure that your browser and google meet ui is both set to Chinese Traditional/English otherwise the extension will not work.
+- Make sure that your browser and google meet ui is both set to ZH-TW/EN otherwise the extension will not work.
 - <a href="https://github.com/fjwntut/auto-admit-extension/raw/main/AutoAdmit.zip" Download>Download Auto Admit</a>
 - Installation： 
     1. Extract the zip
