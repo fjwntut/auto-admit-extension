@@ -45,12 +45,12 @@ function AddButton(){
     newCSS.href = chrome.runtime.getURL("./res/btn.css");
 
     // Append to html
-    for(let element of document.getElementsByTagName('div')){
+    for(let element of document.getElementsByTagName('button')){
         if (element.getAttribute("aria-label") == chrome.i18n.getMessage("addBeside")){
             if(!button_added){
                 document.head.appendChild(newCSS);
-                let sibling = element.parentElement;
-                button_added = sibling.parentElement.appendChild(newBtn);
+                let sibling = element.parentNode.parentNode.parentNode.parentNode.parentNode;
+                button_added = sibling.parentElement.insertBefore(newBtn,sibling);
                 btn_icon = button_added.appendChild(newImg);
                 btn_text = button_added.appendChild(newDiv);
                 button_added.addEventListener("click",()=>{button_onclick()});
@@ -69,6 +69,7 @@ function button_onclick(){
 function UpdateButton(){
     btn_icon.src = chrome.runtime.getURL("./res/button-"+toggle+".png");
     btn_text.innerHTML = chrome.i18n.getMessage("toggle"+toggle);
+    button_added.classList.toggle('on', toggle=="on");
     chrome.runtime.sendMessage({
         action: 'setToggle',
         value: toggle

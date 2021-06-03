@@ -20,7 +20,7 @@
         "description":"The button to press."
     },
     "addBeside": {
-        "message": "Meeting details",
+        "message": "Present now",
         "description":"The button to add beside"
     }
   }

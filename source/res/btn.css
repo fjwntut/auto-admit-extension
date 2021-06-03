@@ -1,20 +1,28 @@
 #auto-admit-button{
-    width: 120px;
-    height: 100%;
-    display: flexbox;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 8px;
+    margin: 0 6px;
     border: 0;
-    background-color: transparent;
+    background-color: #3c4043;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+#auto-admit-button.on{
+    background-color: #8ab4f8;
 }
 
 #auto-admit-button img{
     width: 24px;
     height: 24px;
+    margin: auto;
 }
 
 #auto-admit-button div{
+    display: none;
     color: #3c4043;
     font-family: "Google Sans";
     font-weight: 500;
