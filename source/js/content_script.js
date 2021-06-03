@@ -62,6 +62,7 @@ function AddButton(){
                 btn_text = button_added.appendChild(newDiv);
                 button_added.addEventListener("click",()=>{button_onclick()});
                 UpdateButton();
+                break;
             }
         }
     }
@@ -74,9 +75,11 @@ function button_onclick(){
 }
 
 function UpdateButton(){
-    btn_icon.src = chrome.runtime.getURL("./res/button-"+toggle+".png");
-    btn_text.innerHTML = chrome.i18n.getMessage("toggle"+toggle);
-    button_added.classList.toggle('on', toggle=="on");
+    if(button_added){
+        btn_icon.src = chrome.runtime.getURL("./res/button-"+toggle+".png");
+        btn_text.innerHTML = chrome.i18n.getMessage("toggle"+toggle);
+        button_added.classList.toggle('on', toggle=="on");
+    }
     chrome.runtime.sendMessage({
         action: 'setToggle',
         value: toggle

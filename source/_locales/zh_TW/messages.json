@@ -20,7 +20,7 @@
       "description":"The button to press."
     },
     "addBeside": {
-      "message": "會議詳細資料",
+      "message": "立即分享螢幕畫面",
       "description":"The button to add beside"
     }
   }
