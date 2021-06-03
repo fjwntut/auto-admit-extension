@@ -10,6 +10,13 @@ function getToggle(){
     },(response)=>{
         toggle = response.result
     })
+    chrome.runtime.onMessage.addListener((msg, sender, sendResponse) =>{
+        if (msg.action == "toggle") {
+            toggle = msg.value;
+        }
+        UpdateButton();
+        console.log("Auto admit toggle by icon: "+toggle);
+    });
 }
 getToggle();
 
